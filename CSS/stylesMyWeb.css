@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+}
+
+section {
+    scroll-margin-top: 150px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F7EFE5;
+}
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    padding: 20px 100px;
+    background: #C3ACD0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 5px rgb(103, 65, 136);
+}
+
+.title {
+    color: #000;
+    font-size: 25px;
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #674188;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btn-Exit {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #674188;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #674188;
+    font-weight: 500;
+    margin-left: 0;
+    transition: .5s;
+}
+
+.navigation .btn-Exit:hover {
+    background: #674188;
+    color: #fff;
+}
+
+.navigation form {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.main-content {
+    padding-top: 70px;  
+}
+
+/*Banner*/
+.content {
+    min-height: 450px;
+    padding: 180px 100px 80px;
+
+    background: url(./Imagenes/banner1.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h2 {
+    font-size: 35px;
+    color: #FFFBF5;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.content p {
+    font-size: 20px;
+    color: #FFFBF5;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.content .documento {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Imagenes */
+.yo {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #C3ACD0;
+}
+
+/*Sección sobre mi*/
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #FFFBF5;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 40px 80px;
+    box-shadow: 0 4px 10px rgba(103, 65, 136, 0.2);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.about-title {
+    margin-bottom: 30px;
+}
+
+.about-title h2{
+    font-size: 30px;
+}
+.about-me .text{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 0 25px;
+    width: 800px;
+    line-height: 1.6;
+}
+
+.about-me .text p {
+    margin-bottom: 15px;
+}
+
+.about-me .img {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*Sección Educación*/
+.study-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.study {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #FFFBF5;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 60px 80px;
+    box-shadow: 0 4px 10px rgba(103, 65, 136, 0.2);
+}
+
+.study-title {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.education {
+    width: 45%;
+}
+
+.education p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.skills {
+    width: 45%;
+}
+
+.skills h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    padding-left: 25px;
+}
+
+.skills li {
+    margin-bottom: 5px;
+}
+
+/*Sección Contacto*/
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #FFFBF5;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 70px 80px;
+    box-shadow: 0 4px 10px rgba(103, 65, 136, 0.2);
+}
+
+.contact-me h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-me p {
+    font-size: 18px;
+}
+
+/* medidas para pantallas pequeñas*/
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navigation .btn-Exit {
+        margin-left: 0;
+    }
+
+    .navigation form {
+        margin-left: 0;
+    }
+
+    .navigation a {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 140px 25px 60px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-me {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .about-me .text {
+        width: 100%;
+        padding: 0;
+        font-size: 17px;
+    }
+
+    .yo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .study {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .study-content {
+        flex-direction: column;
+    }
+
+    .education {
+        width: 100%;
+    }
+
+    .skills {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .contact-me {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .contact-me p {
+        font-size: 15px;
+    }
+}

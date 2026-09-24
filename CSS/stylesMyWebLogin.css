@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    background-color: #F7EFE5;
+    background: url("./Imagenes/fondoLogin.png");
+    background-size: auto;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+P {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #674188;
+}
+
+header {
+    height: 130px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #C3ACD0; 
+    border-left: 15px solid #674188;
+    border-radius: 0 0 200px 4px;
+    box-shadow: 0 4px 5px rgb(103, 65, 136);
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation .btnLogin-primary {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #674188;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    color:#674188;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navigation .btnLogin-primary:hover {
+    background: #674188;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        padding: 20px 15px;
+    }
+
+    .navigation .btnLogin-primary {
+        width: 110px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+.login-form {
+    position: relative;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 50px;
+    background-color: #C3ACD0;
+    border-radius: 8px; 
+    box-shadow: 0 4px 35px rgb(103, 65, 136);
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+.login-form.active-popup {
+    transform: scale(1);
+}
+.login-form h2 {
+    font-size: 35px;
+    color: #674188;
+    text-align: left;
+    margin: 0 0 35px 0;
+}
+
+.login-form .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #C3ACD0;
+    font-size: 2em;
+    color: #674188;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-control {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid  #674188;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    width: 30%;
+    padding: 10px;
+    background-color: #674188;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
